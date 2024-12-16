@@ -12,7 +12,7 @@ export async function getServerSideProps() {
   try {
     // Fetch data dari backend Laravel
     const res = await fetch(
-      "https://greasy-margarethe-minticode-2e20e0e1.koyeb.app/api/berita"
+      "https://experimental-clarita-alfianrahman-05697585.koyeb.app/api/berita"
     );
 
     if (!res.ok) {
@@ -51,7 +51,7 @@ const Home = ({ berita }) => {
               key={item.id}
               className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0 bg-fixed bg-cover bg-no-repeat xl:h-screen"
               style={{
-                backgroundImage: `url(https://greasy-margarethe-minticode-2e20e0e1.koyeb.app/public/img/berita/${item.gambar})`,
+                backgroundImage: `url(https://experimental-clarita-alfianrahman-05697585.koyeb.app/public/img/berita/${item.gambar})`,
               }}
             >
               {/* Overlay Transparan Hitam */}
