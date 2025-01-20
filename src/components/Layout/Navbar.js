@@ -33,7 +33,21 @@ export function Navbar() {
     >
       <div className="w-full lg:container mx-auto flex flex-wrap md:flex-nowrap items-center justify-between">
         <Link href="/" className="flex items-center w-auto text-4xl mr-14">
-          {colorChange || showMobileNav ? <h2>Kejari</h2> : <h2>Kejari</h2>}
+          {colorChange || showMobileNav ? (
+            <Image
+              src={"/assets/img/logo-kejari.png"}
+              width={60}
+              height={60}
+              alt="logo"
+            />
+          ) : (
+            <Image
+              src={"/assets/img/logo-kejari.png"}
+              width={60}
+              height={60}
+              alt="logo"
+            />
+          )}
         </Link>
         <button
           type="button"
