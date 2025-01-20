@@ -111,8 +111,8 @@ const Home = ({ berita }) => {
 
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-4 sm:w-auto">
             {/* {services.map((service, index) => ( */}
-            <div
-              // key={index}
+            <a
+              href="/layanan/layanan-antar-barang-bukti"
               className="rounded-xl bg-white p-10 flex flex-col gap-2 items-center shadow-xl border border-[#f5f5f5] text-center"
             >
               <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-[#17438E] text-[32px] text-white">
@@ -125,52 +125,52 @@ const Home = ({ berita }) => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam, quae.
               </div>
-            </div>
-            <div
-              // key={index}
+            </a>
+            <a
+              href="/layanan/layanan-konsultasi-hukum-gratis"
               className="rounded-xl bg-white p-10 flex flex-col gap-2 items-center shadow-xl border border-[#f5f5f5] text-center"
             >
               <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-[#17438E] text-[32px] text-white">
                 <FaMoneyBillAlt />
               </div>
               <div className="mt-2 font-poppins-bold text-xl md:text-2xl text-[#17438E] text-center">
-                Layanan Antar Barang Bukti
+                Layanan Konsultasi Hukum Gratis
               </div>
               <div className="mt-1 font-poppins-medium text-base text-[#616161]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam, quae.
               </div>
-            </div>
-            <div
-              // key={index}
+            </a>
+            <a
+              href="/layanan/layanan-tilang-drive-thru"
               className="rounded-xl bg-white p-10 flex flex-col gap-2 items-center shadow-xl border border-[#f5f5f5] text-center"
             >
               <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-[#17438E] text-[32px] text-white">
                 <FaMoneyBillAlt />
               </div>
               <div className="mt-2 font-poppins-bold text-xl md:text-2xl text-[#17438E] text-center">
-                Layanan Antar Barang Bukti
+                Layanan Tilang Drive Thru
               </div>
               <div className="mt-1 font-poppins-medium text-base text-[#616161]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam, quae.
               </div>
-            </div>
-            <div
-              // key={index}
+            </a>
+            <a
+              href="/layanan/layanan-tilang-delivery"
               className="rounded-xl bg-white p-10 flex flex-col gap-2 items-center shadow-xl border border-[#f5f5f5] text-center"
             >
               <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-[#17438E] text-[32px] text-white">
                 <FaMoneyBillAlt />
               </div>
               <div className="mt-2 font-poppins-bold text-xl md:text-2xl text-[#17438E] text-center">
-                Layanan Antar Barang Bukti
+                Layanan Tilang Delivery
               </div>
               <div className="mt-1 font-poppins-medium text-base text-[#616161]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam, quae.
               </div>
-            </div>
+            </a>
             {/* ))} */}
           </div>
         </div>

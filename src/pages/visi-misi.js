@@ -5,7 +5,7 @@ import { Navbar } from "@/components/Layout/Navbar";
 import Head from "next/head";
 import Image from "next/image";
 
-export default function StrukturOrganisasi() {
+export default function VisiMisi() {
   return (
     <>
       <Header />
