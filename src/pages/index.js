@@ -21,11 +21,11 @@ export async function getServerSideProps() {
 
     const result = await res.json();
 
-    const resService = await fetch("http://localhost:3000/data/services.json");
+    // const resService = await fetch("http://localhost:3000/data/services.json");
 
-    const services = await resService.json();
+    // const services = await resService.json();
     return {
-      props: { berita: result.data || [], services }, // Passing `result.data` sebagai `berita`
+      props: { berita: result.data || [] }, // Passing `result.data` sebagai `berita`
     };
   } catch (error) {
     console.error("Error fetching data:", error.message);
@@ -35,7 +35,7 @@ export async function getServerSideProps() {
   }
 }
 
-const Home = ({ berita, services }) => {
+const Home = ({ berita }) => {
   const [show, setShow] = useState(true);
   const [placement, setPlacement] = useState("right");
 
@@ -110,22 +110,68 @@ const Home = ({ berita, services }) => {
           </h6> */}
 
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-4 sm:w-auto">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="rounded-xl bg-white p-10 flex flex-col gap-2 items-center shadow-xl border border-[#f5f5f5] text-center"
-              >
-                <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-[#17438E] text-[32px] text-white">
-                  <FaMoneyBillAlt />
-                </div>
-                <div className="mt-2 font-poppins-bold text-xl md:text-2xl text-[#17438E] text-center">
-                  {service.name}
-                </div>
-                <div className="mt-1 font-poppins-medium text-base text-[#616161]">
-                  {service.description}
-                </div>
+            {/* {services.map((service, index) => ( */}
+            <div
+              // key={index}
+              className="rounded-xl bg-white p-10 flex flex-col gap-2 items-center shadow-xl border border-[#f5f5f5] text-center"
+            >
+              <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-[#17438E] text-[32px] text-white">
+                <FaMoneyBillAlt />
               </div>
-            ))}
+              <div className="mt-2 font-poppins-bold text-xl md:text-2xl text-[#17438E] text-center">
+                Layanan Antar Barang Bukti
+              </div>
+              <div className="mt-1 font-poppins-medium text-base text-[#616161]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, quae.
+              </div>
+            </div>
+            <div
+              // key={index}
+              className="rounded-xl bg-white p-10 flex flex-col gap-2 items-center shadow-xl border border-[#f5f5f5] text-center"
+            >
+              <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-[#17438E] text-[32px] text-white">
+                <FaMoneyBillAlt />
+              </div>
+              <div className="mt-2 font-poppins-bold text-xl md:text-2xl text-[#17438E] text-center">
+                Layanan Antar Barang Bukti
+              </div>
+              <div className="mt-1 font-poppins-medium text-base text-[#616161]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, quae.
+              </div>
+            </div>
+            <div
+              // key={index}
+              className="rounded-xl bg-white p-10 flex flex-col gap-2 items-center shadow-xl border border-[#f5f5f5] text-center"
+            >
+              <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-[#17438E] text-[32px] text-white">
+                <FaMoneyBillAlt />
+              </div>
+              <div className="mt-2 font-poppins-bold text-xl md:text-2xl text-[#17438E] text-center">
+                Layanan Antar Barang Bukti
+              </div>
+              <div className="mt-1 font-poppins-medium text-base text-[#616161]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, quae.
+              </div>
+            </div>
+            <div
+              // key={index}
+              className="rounded-xl bg-white p-10 flex flex-col gap-2 items-center shadow-xl border border-[#f5f5f5] text-center"
+            >
+              <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-[#17438E] text-[32px] text-white">
+                <FaMoneyBillAlt />
+              </div>
+              <div className="mt-2 font-poppins-bold text-xl md:text-2xl text-[#17438E] text-center">
+                Layanan Antar Barang Bukti
+              </div>
+              <div className="mt-1 font-poppins-medium text-base text-[#616161]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, quae.
+              </div>
+            </div>
+            {/* ))} */}
           </div>
         </div>
       </div>
