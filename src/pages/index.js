@@ -121,10 +121,6 @@ const Home = ({ berita }) => {
               <div className="mt-2 font-poppins-bold text-xl md:text-2xl text-[#17438E] text-center">
                 Layanan Antar Barang Bukti
               </div>
-              <div className="mt-1 font-poppins-medium text-base text-[#616161]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, quae.
-              </div>
             </a>
             <a
               href="/layanan/layanan-konsultasi-hukum-gratis"
@@ -135,10 +131,6 @@ const Home = ({ berita }) => {
               </div>
               <div className="mt-2 font-poppins-bold text-xl md:text-2xl text-[#17438E] text-center">
                 Layanan Konsultasi Hukum Gratis
-              </div>
-              <div className="mt-1 font-poppins-medium text-base text-[#616161]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, quae.
               </div>
             </a>
             <a
@@ -151,10 +143,6 @@ const Home = ({ berita }) => {
               <div className="mt-2 font-poppins-bold text-xl md:text-2xl text-[#17438E] text-center">
                 Layanan Tilang Drive Thru
               </div>
-              <div className="mt-1 font-poppins-medium text-base text-[#616161]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, quae.
-              </div>
             </a>
             <a
               href="/layanan/layanan-tilang-delivery"
@@ -165,10 +153,6 @@ const Home = ({ berita }) => {
               </div>
               <div className="mt-2 font-poppins-bold text-xl md:text-2xl text-[#17438E] text-center">
                 Layanan Tilang Delivery
-              </div>
-              <div className="mt-1 font-poppins-medium text-base text-[#616161]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, quae.
               </div>
             </a>
             {/* ))} */}
