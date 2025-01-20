@@ -85,8 +85,8 @@ export function Navbar() {
                     : "hover:border-white"
                 }`}
               >
-                <a
-                  href="#"
+                <p
+                  href=""
                   className={`block font-poppins-medium text-base md:text-xs lg:text-base md:text-center ${
                     colorChange || showMobileNav
                       ? "text-white hover:text-white"
@@ -94,12 +94,12 @@ export function Navbar() {
                   }`}
                 >
                   Profil
-                </a>
+                </p>
               </div>
 
               {/* Submenu */}
               {showDropdown && (
-                <ul className="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg text-gray-700">
+                <ul className="absolute left-0 w-48 bg-white shadow-lg text-gray-700">
                   <li className="hover:bg-gray-100">
                     <Link
                       href="/visi-misi"

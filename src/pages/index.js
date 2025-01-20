@@ -1,6 +1,6 @@
 // pages/index.js
 import { useState } from "react";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaMoneyBillAlt, FaWhatsapp } from "react-icons/fa";
 import Button from "../components/Button/Button";
 import Link from "next/link";
 import Header from "../components/Layout/Header";
@@ -21,18 +21,21 @@ export async function getServerSideProps() {
 
     const result = await res.json();
 
+    const resService = await fetch("http://localhost:3000/data/services.json");
+
+    const services = await resService.json();
     return {
-      props: { berita: result.data || [] }, // Passing `result.data` sebagai `berita`
+      props: { berita: result.data || [], services }, // Passing `result.data` sebagai `berita`
     };
   } catch (error) {
     console.error("Error fetching data:", error.message);
     return {
-      props: { berita: [] }, // Return array kosong jika ada error
+      props: { berita: [], services: [] }, // Return array kosong jika ada error
     };
   }
 }
 
-const Home = ({ berita }) => {
+const Home = ({ berita, services }) => {
   const [show, setShow] = useState(true);
   const [placement, setPlacement] = useState("right");
 
@@ -97,6 +100,35 @@ const Home = ({ berita }) => {
         </Carousel>
       </div>
 
+      <div className="bg-gradient-to-t from-white to-[#bbd4fe] py-16">
+        <div className="px-4 xl:px-0 xl:container mx-auto flex flex-col items-center md:h-max text-[#153164]">
+          <h1 className="text-center font-poppins-bold text-4xl md:text-5xl mb-4">
+            Bagaimana kami dapat membantu Anda?
+          </h1>
+          {/* <h6 className="text-center font-poppins-regular text-base tracking-widest">
+            Here are the services we can provide.
+          </h6> */}
+
+          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-4 sm:w-auto">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="rounded-xl bg-white p-10 flex flex-col gap-2 items-center shadow-xl border border-[#f5f5f5] text-center"
+              >
+                <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-[#17438E] text-[32px] text-white">
+                  <FaMoneyBillAlt />
+                </div>
+                <div className="mt-2 font-poppins-bold text-xl md:text-2xl text-[#17438E] text-center">
+                  {service.name}
+                </div>
+                <div className="mt-1 font-poppins-medium text-base text-[#616161]">
+                  {service.description}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
       {/* Berita Terbaru */}
       <div className="py-16 bg-white">
         <div className="px-4 xl:px-0 xl:container mx-auto flex flex-col items-center md:h-max text-black">
@@ -116,7 +148,7 @@ const Home = ({ berita }) => {
                 <div
                   className="h-full md:h-3/6 bg-cover bg-no-repeat"
                   style={{
-                    backgroundImage: `url(https://greasy-margarethe-minticode-2e20e0e1.koyeb.app/public/img/berita/${item.gambar})`,
+                    backgroundImage: `url(https://experimental-clarita-alfianrahman-05697585.koyeb.app/public/img/berita/${item.gambar})`,
                   }}
                 ></div>
                 <div className="px-4 py-3 h-auto">
