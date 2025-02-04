@@ -15,7 +15,8 @@ export async function getServerSideProps() {
 
     // const res = await fetch("http://localhost:8000/api/berita");
     const API_URL =
-      process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000/api/berita";
+      process.env.NEXT_PUBLIC_API_URL ||
+      "https://experimental-clarita-alfianrahman-05697585.koyeb.app/api/berita";
     const res = await fetch(API_URL);
 
     if (!res.ok) {
@@ -71,7 +72,7 @@ const Home = ({ berita }) => {
               key={item.id}
               className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0 bg-fixed bg-cover bg-no-repeat xl:h-screen"
               style={{
-                backgroundImage: `url(http://127.0.0.1:8000/img/berita/${item.gambar})`,
+                backgroundImage: `url(https://experimental-clarita-alfianrahman-05697585.koyeb.app/public/img/berita/${item.gambar})`,
               }}
             >
               {/* Overlay Transparan Hitam */}
@@ -192,7 +193,7 @@ const Home = ({ berita }) => {
                 <div
                   className="h-full md:h-3/6 bg-cover bg-no-repeat"
                   style={{
-                    backgroundImage: `url(http://127.0.0.1:8000/img/berita/${item.gambar})`,
+                    backgroundImage: `url(https://experimental-clarita-alfianrahman-05697585.koyeb.app/public/img/berita/${item.gambar})`,
                   }}
                 ></div>
                 <div className="px-4 py-3 h-auto">
