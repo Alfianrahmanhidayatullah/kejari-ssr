@@ -71,7 +71,7 @@ const Home = ({ berita }) => {
       {/* Hero Section */}
       <div className="bg-fixed bg-cover bg-no-repeat xl:h-screen">
         <Carousel>
-          {berita.map((item) => (
+          {berita.slice(0, 4).map((item) => (
             <div
               key={item.id}
               className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0 bg-fixed bg-cover bg-no-repeat xl:h-screen"
