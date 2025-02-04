@@ -43,7 +43,7 @@ const Home = ({ berita }) => {
   const [show, setShow] = useState(true);
   const [placement, setPlacement] = useState("right");
 
-  // console.log("Data Berita:", berita);
+  console.log("Data Berita:", berita);
   const [visibleCount, setVisibleCount] = useState(4); // Mulai dengan 4 berita
 
   const [isLoading, setIsLoading] = useState(false);
