@@ -14,10 +14,14 @@ export async function getServerSideProps() {
     // "https://experimental-clarita-alfianrahman-05697585.koyeb.app/api/berita"
 
     // const res = await fetch("http://localhost:8000/api/berita");
-    const API_URL =
-      process.env.NEXT_PUBLIC_API_URL ||
-      "https://experimental-clarita-alfianrahman-05697585.koyeb.app/api/berita";
-    const res = await fetch(API_URL);
+    // const API_URL =
+    //   process.env.NEXT_PUBLIC_API_URL ||
+    //   "https://experimental-clarita-alfianrahman-05697585.koyeb.app/api/berita";
+    // const res = await fetch(API_URL);
+
+    const res = await fetch(
+      "https://experimental-clarita-alfianrahman-05697585.koyeb.app/api/berita"
+    );
 
     if (!res.ok) {
       throw new Error(`HTTP error! status: ${res.status}`);
