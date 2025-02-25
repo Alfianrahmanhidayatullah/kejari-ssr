@@ -11,7 +11,7 @@ import { Carousel } from "flowbite-react";
 export async function getServerSideProps() {
   try {
     // Fetch data dari backend Laravel
-    // "https://experimental-clarita-alfianrahman-05697585.koyeb.app/api/berita"
+    // "https://kejari-surabaya.my.id/api/berita"
 
     // const res = await fetch("http://localhost:8000/api/berita");
     // const API_URL =
@@ -19,9 +19,7 @@ export async function getServerSideProps() {
     //   "https://experimental-clarita-alfianrahman-05697585.koyeb.app/api/berita";
     // const res = await fetch(API_URL);
 
-    const res = await fetch(
-      "https://experimental-clarita-alfianrahman-05697585.koyeb.app/api/berita"
-    );
+    const res = await fetch("https://kejari-surabaya.my.id/api/berita");
 
     if (!res.ok) {
       throw new Error(`HTTP error! status: ${res.status}`);
@@ -76,7 +74,7 @@ const Home = ({ berita }) => {
               key={item.id}
               className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0 bg-fixed bg-cover bg-no-repeat xl:h-screen"
               style={{
-                backgroundImage: `url(https://experimental-clarita-alfianrahman-05697585.koyeb.app/public/img/berita/${item.gambar})`,
+                backgroundImage: `url(https://kejari-surabaya.my.id/img/berita/${item.gambar})`,
               }}
             >
               {/* Overlay Transparan Hitam */}
@@ -197,7 +195,7 @@ const Home = ({ berita }) => {
                 <div
                   className="h-full md:h-3/6 bg-cover bg-no-repeat"
                   style={{
-                    backgroundImage: `url(https://experimental-clarita-alfianrahman-05697585.koyeb.app/public/img/berita/${item.gambar})`,
+                    backgroundImage: `url(https://kejari-surabaya.my.id/img/berita/${item.gambar})`,
                   }}
                 ></div>
                 <div className="px-4 py-3 h-auto">
