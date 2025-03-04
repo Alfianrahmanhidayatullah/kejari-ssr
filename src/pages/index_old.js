@@ -7,7 +7,6 @@ import Header from "../components/Layout/Header";
 import { Navbar } from "../components/Layout/Navbar";
 import Footer from "../components/Layout/Footer";
 import { Carousel } from "flowbite-react";
-import Image from "next/image";
 
 export async function getServerSideProps() {
   try {
@@ -121,10 +120,10 @@ const Home = ({ berita }) => {
         </Carousel>
       </div>
 
-      <div className="bg-gradient-to-t from-white to-[#b5ead1] py-16">
-        <div className="px-4 xl:px-8 px flex flex-col items-center md:h-max text-[#118B50]">
-          <h1 className="text-center font-poppins-bold text-4xl md:text-[48px] mb-4 uppercase underline">
-            Layanan Publik
+      <div className="bg-gradient-to-t from-white to-[#bbd4fe] py-16">
+        <div className="px-4 xl:px-0 xl:container mx-auto flex flex-col items-center md:h-max text-[#153164]">
+          <h1 className="text-center font-poppins-bold text-4xl md:text-5xl mb-4">
+            Bagaimana kami dapat membantu Anda?
           </h1>
           {/* <h6 className="text-center font-poppins-regular text-base tracking-widest">
             Here are the services we can provide.
@@ -134,97 +133,48 @@ const Home = ({ berita }) => {
             {/* {services.map((service, index) => ( */}
             <a
               href="/layanan/layanan-antar-barang-bukti"
-              className="rounded-xl bg-white py-10 px-4 flex gap-2 items-center shadow-xl border border-[#f5f5f5] text-center hover:bg-[#118B50] group duration-200"
+              className="rounded-xl bg-white p-10 flex flex-col gap-2 items-center shadow-xl border border-[#f5f5f5] text-center"
             >
-              <div className="flex  items-center justify-center w-2/6 mr-2">
-                {/* <FaMoneyBillAlt /> */}
-                <Image
-                  src={"/assets/img/layanan/layanan-1/layanan-1.png"}
-                  width={100}
-                  height={100}
-                  alt="layanan-1"
-                  className="rounded-full bg-white border border-[#118B50] p-3 w-24 "
-                />
+              <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-[#17438E] text-[32px] text-white">
+                <FaMoneyBillAlt />
               </div>
-              <div className="flex flex-col text-left ">
-                <div className="mt-2 font-poppins-bold text-base md:text-lg text-[#118B50] group-hover:text-white">
-                  Layanan Antar Barang Bukti
-                </div>
-                <div className="text-sm text-black group-hover:text-white">
-                  Layanan antar barang bukti gratis langsung ke rumah anda
-                </div>
+              <div className="mt-2 font-poppins-bold text-xl md:text-2xl text-[#17438E] text-center">
+                Layanan Antar Barang Bukti
               </div>
             </a>
             <a
-              href="/layanan/layanan-antar-barang-bukti"
-              className="rounded-xl bg-white py-10 px-4 flex gap-2 items-center shadow-xl border border-[#f5f5f5] text-center hover:bg-[#118B50] group duration-200 w-full"
+              href="/layanan/layanan-konsultasi-hukum-gratis"
+              className="rounded-xl bg-white p-10 flex flex-col gap-2 items-center shadow-xl border border-[#f5f5f5] text-center"
             >
-              <div className="flex  items-center justify-center w-20 mr-2">
-                {/* <FaMoneyBillAlt /> */}
-                <Image
-                  src={"/assets/img/layanan/layanan-2/layanan-2.png"}
-                  width={100}
-                  height={100}
-                  alt="layanan-1"
-                  className="rounded-full bg-white border border-[#118B50] p-3 w-24 "
-                />
+              <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-[#17438E] text-[32px] text-white">
+                <FaMoneyBillAlt />
               </div>
-              <div className="flex flex-col text-left w-auto">
-                <div className="mt-2 font-poppins-bold text-base md:text-lg text-[#118B50] group-hover:text-white">
-                  Konsultasi Hukum Gratis
-                </div>
-                <div className="text-sm text-black group-hover:text-white">
-                  Layanan konsultasi umum untuk masyarakat
-                </div>
+              <div className="mt-2 font-poppins-bold text-xl md:text-2xl text-[#17438E] text-center">
+                Layanan Konsultasi Hukum Gratis
               </div>
             </a>
             <a
-              href="/layanan/layanan-antar-barang-bukti"
-              className="rounded-xl bg-white py-10 px-4 flex gap-2 items-center shadow-xl border border-[#f5f5f5] text-center hover:bg-[#118B50] group duration-200"
+              href="/layanan/layanan-tilang-drive-thru"
+              className="rounded-xl bg-white p-10 flex flex-col gap-2 items-center shadow-xl border border-[#f5f5f5] text-center"
             >
-              <div className="flex  items-center justify-center mr-2 rounded-full border border-[#118B50] p-4 w-16 h-[8vh] bg-white ">
-                {/* <FaMoneyBillAlt /> */}
-                <Image
-                  src={"/assets/img/layanan/layanan-3/layanan-3.png"}
-                  width={100}
-                  height={100}
-                  alt="layanan-1"
-                  className="  "
-                />
+              <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-[#17438E] text-[32px] text-white">
+                <FaMoneyBillAlt />
               </div>
-              <div className="flex flex-col text-left ">
-                <div className="mt-2 font-poppins-bold text-base md:text-lg text-[#118B50] group-hover:text-white">
-                  Informasi Perkara
-                </div>
-                <div className="text-sm text-black group-hover:text-white">
-                  Lihat perkembangan perkara anda disini
-                </div>
+              <div className="mt-2 font-poppins-bold text-xl md:text-2xl text-[#17438E] text-center">
+                Layanan Tilang Drive Thru
               </div>
             </a>
             <a
-              href="/layanan/layanan-antar-barang-bukti"
-              className="rounded-xl bg-white py-10 px-4 flex gap-2 items-center shadow-xl border border-[#f5f5f5] text-center hover:bg-[#118B50] group duration-200"
+              href="/layanan/layanan-tilang-delivery"
+              className="rounded-xl bg-white p-10 flex flex-col gap-2 items-center shadow-xl border border-[#f5f5f5] text-center"
             >
-              <div className="flex  items-center justify-center  mr-2 rounded-full bg-white border border-[#118B50] p-3 w-20 h-[8vh] ">
-                {/* <FaMoneyBillAlt /> */}
-                <Image
-                  src={"/assets/img/layanan/layanan-4/layanan-4.png"}
-                  width={100}
-                  height={100}
-                  alt="layanan-1"
-                  className=""
-                />
+              <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-[#17438E] text-[32px] text-white">
+                <FaMoneyBillAlt />
               </div>
-              <div className="flex flex-col text-left ">
-                <div className="mt-2 font-poppins-bold text-base md:text-lg text-[#118B50] group-hover:text-white">
-                  Layanan Antar Barang Bukti Gratis
-                </div>
-                <div className="text-sm text-black group-hover:text-white">
-                  Layanan antar barang bukti gratis Langsung ke rumah anda
-                </div>
+              <div className="mt-2 font-poppins-bold text-xl md:text-2xl text-[#17438E] text-center">
+                Layanan Tilang Delivery
               </div>
             </a>
-
             {/* ))} */}
           </div>
         </div>
