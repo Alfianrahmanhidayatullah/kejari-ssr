@@ -27,24 +27,24 @@ export function Navbar() {
     <nav
       className={`${
         colorChange || showMobileNav
-          ? "bg-white duration-500"
+          ? "bg-[#17438E] duration-500"
           : "bg-transparent"
       } p-3 fixed w-full z-20 top-0 left-0 border-b border-gray-200`}
     >
-      <div className="w-full lg:px-6 flex flex-wrap md:flex-nowrap items-center justify-between ">
+      <div className="w-full lg:container mx-auto flex flex-wrap md:flex-nowrap items-center justify-between">
         <Link href="/" className="flex items-center w-auto text-4xl mr-14">
           {colorChange || showMobileNav ? (
             <Image
-              src={"/assets/img/logo-kejari-new.png"}
-              width={300}
-              height={300}
+              src={"/assets/img/logo-kejari.png"}
+              width={60}
+              height={60}
               alt="logo"
             />
           ) : (
             <Image
-              src={"/assets/img/logo-kejari-white.png"}
-              width={300}
-              height={300}
+              src={"/assets/img/logo-kejari.png"}
+              width={60}
+              height={60}
               alt="logo"
             />
           )}
@@ -78,7 +78,7 @@ export function Navbar() {
                 href="/"
                 className={`block rounded font-poppins-medium text-base md:text-xs lg:text-base md:text-center hover:no-underline ${
                   colorChange || showMobileNav
-                    ? "text-[#118B50]"
+                    ? "text-white hover:text-white"
                     : "text-white hover:text-white"
                 }`}
               >
@@ -103,11 +103,11 @@ export function Navbar() {
                   href=""
                   className={`block font-poppins-medium text-base md:text-xs lg:text-base md:text-center ${
                     colorChange || showMobileNav
-                      ? "text-[#118B50]"
+                      ? "text-white hover:text-white"
                       : "text-white hover:text-white"
                   }`}
                 >
-                  Tentang Kami
+                  Profil
                 </p>
               </div>
 
@@ -145,11 +145,11 @@ export function Navbar() {
                 href="/about"
                 className={`block rounded font-poppins-medium text-base md:text-xs lg:text-base md:text-center hover:no-underline ${
                   colorChange || showMobileNav
-                    ? "text-[#118B50]"
+                    ? "text-white hover:text-white"
                     : "text-white hover:text-white"
                 }`}
               >
-                Layanan Publik
+                Informasi Publik
               </a>
             </li>
             <li
@@ -163,11 +163,11 @@ export function Navbar() {
                 href="/about"
                 className={`block rounded font-poppins-medium text-base md:text-xs lg:text-base md:text-center hover:no-underline ${
                   colorChange || showMobileNav
-                    ? "text-[#118B50]"
+                    ? "text-white hover:text-white"
                     : "text-white hover:text-white"
                 }`}
               >
-                Layanan Hukum
+                Galeri
               </a>
             </li>
             <li
@@ -181,11 +181,11 @@ export function Navbar() {
                 href="/about"
                 className={`block rounded font-poppins-medium text-base md:text-xs lg:text-base md:text-center hover:no-underline ${
                   colorChange || showMobileNav
-                    ? "text-[#118B50]"
+                    ? "text-white hover:text-white"
                     : "text-white hover:text-white"
                 }`}
               >
-                Berita
+                Kontak
               </a>
             </li>
             <li
@@ -199,11 +199,11 @@ export function Navbar() {
                 href="/about"
                 className={`block rounded font-poppins-medium text-base md:text-xs lg:text-base md:text-center hover:no-underline ${
                   colorChange || showMobileNav
-                    ? "text-[#118B50]"
+                    ? "text-white hover:text-white"
                     : "text-white hover:text-white"
                 }`}
               >
-                Hubungi Kami
+                Informasi Perkara
               </a>
             </li>
             <li
@@ -217,11 +217,29 @@ export function Navbar() {
                 href="/about"
                 className={`block rounded font-poppins-medium text-base md:text-xs lg:text-base md:text-center hover:no-underline ${
                   colorChange || showMobileNav
-                    ? "text-[#118B50]"
+                    ? "text-white hover:text-white"
                     : "text-white hover:text-white"
                 }`}
               >
                 Reformasi Birokrasi
+              </a>
+            </li>
+            <li
+              className={`hover:border-b-4 hover:duration-200 py-3  ${
+                colorChange || showMobileNav
+                  ? "hover:border-[#fb392f]"
+                  : "hover:border-white"
+              }`}
+            >
+              <a
+                href="/about"
+                className={`block rounded font-poppins-medium text-base md:text-xs lg:text-base md:text-center hover:no-underline ${
+                  colorChange || showMobileNav
+                    ? "text-white hover:text-white"
+                    : "text-white hover:text-white"
+                }`}
+              >
+                Pelayanan Publik
               </a>
             </li>
           </ul>
