@@ -104,7 +104,7 @@ const Home = ({ berita }) => {
 
       <div className="bg-gradient-to-t from-white to-[#b5ead1] py-16">
         <div className="px-4 xl:px-8 px flex flex-col items-center md:h-max text-[#118B50]">
-          <h1 className="text-center font-poppins-bold text-4xl md:text-[48px] mb-4 uppercase underline">
+          <h1 className="text-center font-poppins-bold text-4xl md:text-[40px] mb-4 uppercase underline">
             Layanan Publik
           </h1>
           {/* <h6 className="text-center font-poppins-regular text-base tracking-widest">
@@ -420,6 +420,138 @@ const Home = ({ berita }) => {
               {/* Overlay Transparan Hitam */}
             </div>
           </Carousel>
+        </div>
+      </div>
+
+      <div className="min-h-auto bg-white px-6 py-10">
+        {/* Card Container */}
+        <div className="w-full text-center font-poppins-bold text-4xl md:text-[35px] mb-8 text-[#118B50] uppercase underline">
+          <h1>INFORMASI PUBLIK</h1>
+        </div>
+        <div className="w-full flex flex-wrap h-auto p-2 ">
+          <div className="w-full md:w-9/12  px-6 ">
+            <div className="w-full">
+              <Image
+                src={"/assets/img/informasi-publik/informasi-publik-banner.png"}
+                width={1200}
+                height={100}
+                alt="informasi-publik-banner"
+              />
+            </div>
+            <div className=" w-full my-6">
+              {/* Video utama */}
+              <div className="w-full">
+                <iframe
+                  className="w-full h-56 md:h-96 rounded-lg"
+                  src="https://www.youtube.com/embed/UridEmhSPh0?si=48ul4Y_sfnFwKPx-"
+                  title="YouTube video player"
+                  allowFullScreen
+                ></iframe>
+              </div>
+
+              {/* Thumbnail video lainnya */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                <div className="w-full">
+                  <iframe
+                    className="w-full h-32 md:h-48 rounded-lg"
+                    src="https://www.youtube.com/embed/1zmTEYiqDbs?si=6nCbAkU_mojILWv3"
+                    title="YouTube video player"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="w-full">
+                  <iframe
+                    className="w-full h-32 md:h-48 rounded-lg"
+                    src="https://www.youtube.com/embed/MuFTGxKLG4g?si=b0Us1yjAMIYDaP_a"
+                    title="YouTube video player"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="w-full">
+                  <iframe
+                    className="w-full h-32 md:h-48 rounded-lg"
+                    src="https://www.youtube.com/embed/7Xn6lXc05co?si=8Utfg2M5AtcvCFvb"
+                    title="YouTube video player"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+            <div className="">
+              <h1 className="uppercase text-[#118B50] text-left text-3xl">
+                GALERI VIDEO
+              </h1>
+              <p className="text-black mt-2">
+                Dokumentasi video kegiatan, agenda, dan program Yang telah
+                dilakukan oleh kejaksaan Negeri Surabaya dalam mendukung Zona
+                Integritas menuju Wilayah Birokrasi Bersih dan Melayani (WBBM)
+              </p>
+            </div>
+          </div>
+          <div className="w-full md:w-3/12 ">
+            <div className="flex justify-center ">
+              <Image
+                src={"/assets/img/informasi-publik/jam-kerja.png"}
+                width={1000}
+                height={100}
+                alt="jam-kerja"
+              />
+            </div>
+            <div className="my-2 lg:my-6">
+              <h1 className="uppercase text-[#118B50] text-left text-3xl">
+                Infografis
+              </h1>
+              <div className="  bg-cover bg-no-repeat h-[40vh] xl:h-[60vh] ">
+                <Carousel>
+                  <div className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0  bg-no-repeat xl:h-screen">
+                    <Image
+                      src={"/assets/img/informasi-publik/infografis-1.png"}
+                      width={350}
+                      height={1000}
+                      alt="layanan-1"
+                      className=""
+                    />
+                  </div>
+                  <div className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0  bg-no-repeat xl:h-screen">
+                    <Image
+                      src={"/assets/img/informasi-publik/infografis-2.png"}
+                      width={320}
+                      height={1000}
+                      alt="layanan-1"
+                      className=""
+                    />
+                  </div>
+                </Carousel>
+              </div>
+            </div>
+            <div>
+              <h1 className="uppercase text-[#118B50] text-left text-3xl">
+                Survey
+              </h1>
+              <div className="  bg-cover bg-no-repeat h-[40vh] xl:h-[60vh] ">
+                <Carousel>
+                  <div className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0  bg-no-repeat xl:h-screen">
+                    <Image
+                      src={"/assets/img/informasi-publik/survey-1.png"}
+                      width={350}
+                      height={1000}
+                      alt="layanan-1"
+                      className=""
+                    />
+                  </div>
+                  <div className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0  bg-no-repeat xl:h-screen">
+                    <Image
+                      src={"/assets/img/informasi-publik/survey-2.png"}
+                      width={320}
+                      height={1000}
+                      alt="layanan-1"
+                      className=""
+                    />
+                  </div>
+                </Carousel>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
