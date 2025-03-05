@@ -327,7 +327,7 @@ const Home = ({ berita }) => {
         <div className="w-full text-center font-poppins-bold text-4xl md:text-[35px] mb-8  uppercase underline">
           <h1>INFORMASI SEPUTAR</h1>
         </div>
-        <div className="   bg-cover bg-no-repeat xl:h-[60vh] ">
+        <div className="   bg-cover bg-no-repeat xl:h-[72vh] ">
           <Carousel>
             <div
               className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0  bg-no-repeat xl:h-screen"
