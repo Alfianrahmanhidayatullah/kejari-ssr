@@ -99,25 +99,6 @@ const Home = ({ berita }) => {
               </div>
             </div>
           ))}
-
-          {/* <div className="container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0">
-            <div className="w-full md:w-11/12 flex flex-col text-white items-start md:py-24 xl:py-40 ">
-              <h1 className="w-3/4 font-poppins-medium text-xl">
-                We Might be Your Solution
-              </h1>
-              <h1 className="w-3/4 font-poppins-bold text-4xl xl:text-5xl md:leading-[50px] xl:leading-[58px]">
-                We Help Create Your Mobile Apps
-              </h1>
-              <p className="font-poppins-medium text-base mt-4">
-                With our experience working on various kinds of applications, we
-                should be able to help you provide solutions to your problems.
-              </p>
-              <Button
-                classname="rounded-lg bg-[#f9c300] text-white px-6 py-3 flex gap-2.5 justify-center items-center text-lg font-poppins-bold mt-10 hover:no-underline hover:bg-[#e8bd22]"
-                name="GET STARTED"
-              />
-            </div>
-          </div> */}
         </Carousel>
       </div>
 
@@ -279,7 +260,7 @@ const Home = ({ berita }) => {
                 className="rounded-xl bg-white shadow-xl border border-[#f5f5f5] sm:h-auto sm:max-h-[1200px] md:h-[70vh] flex flex-col w-[20vw]"
               >
                 <div
-                  className="h-full md:h-[35vh] bg-cover bg-no-repeat bg-red-200"
+                  className="h-full md:h-[35vh] bg-cover bg-no-repeat "
                   style={{
                     backgroundImage: `url(https://kejari-surabaya.my.id/img/berita/${item.gambar})`,
                   }}
@@ -341,22 +322,104 @@ const Home = ({ berita }) => {
       </div>
 
       {/* Hotline Section */}
-      <div className="pb-10 md:pb-16 px-4 lg:px-20 bg-gradient-to-b from-white to-[#bbd4fe]">
-        <div className="sm:container sm:mx-auto bg-white flex flex-col md:flex-row justify-around rounded-xl shadow-xl z-10 w-full p-10">
-          <div className="text-black">
-            <h1 className="text-2xl sm:text-3xl tracking-wide">
-              Hotline Tanya Jawab
-            </h1>
-          </div>
-          <div className="flex flex-col md:flex-row items-center justify-end md:w-4/12 mt-8 md:mt-0">
-            <Link
-              href="https://wa.me/6281231365118"
-              className="rounded-lg bg-[#17438E] text-white px-6 py-3 flex gap-2.5 justify-center items-center text-lg font-poppins-medium w-full md:w-auto hover:no-underline hover:text-[#17438E] hover:bg-white hover:border hover:border-[#17438E] duration-150"
+      <div className="min-h-auto bg-[#118B50] px-6 py-10">
+        {/* Card Container */}
+        <div className="w-full text-center font-poppins-bold text-4xl md:text-[35px] mb-8  uppercase underline">
+          <h1>INFORMASI SEPUTAR</h1>
+        </div>
+        <div className="   bg-cover bg-no-repeat xl:h-[60vh] ">
+          <Carousel>
+            <div
+              className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0  bg-no-repeat xl:h-screen"
+              // style={{
+              //   backgroundImage: `url(/assets/img/informasi/informasi-1.png)`,
+              // }}
             >
-              <FaWhatsapp />
-              <span>+6281231365118</span>
-            </Link>
-          </div>
+              <Image
+                src={"/assets/img/informasi/informasi-1.png"}
+                width={1000}
+                height={1000}
+                alt="layanan-1"
+                className="w-full"
+              />
+              {/* Overlay Transparan Hitam */}
+            </div>
+            <div
+              className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0  bg-no-repeat xl:h-screen"
+              // style={{
+              //   backgroundImage: `url(/assets/img/informasi/informasi-1.png)`,
+              // }}
+            >
+              <Image
+                src={"/assets/img/informasi/informasi-2.png"}
+                width={1000}
+                height={1000}
+                alt="layanan-1"
+                className="w-full"
+              />
+              {/* Overlay Transparan Hitam */}
+            </div>
+            <div
+              className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0  bg-no-repeat xl:h-screen"
+              // style={{
+              //   backgroundImage: `url(/assets/img/informasi/informasi-1.png)`,
+              // }}
+            >
+              <Image
+                src={"/assets/img/informasi/informasi-3.png"}
+                width={1000}
+                height={1000}
+                alt="layanan-1"
+                className="w-full"
+              />
+              {/* Overlay Transparan Hitam */}
+            </div>
+            <div
+              className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0  bg-no-repeat xl:h-screen"
+              // style={{
+              //   backgroundImage: `url(/assets/img/informasi/informasi-1.png)`,
+              // }}
+            >
+              <Image
+                src={"/assets/img/informasi/informasi-4.png"}
+                width={1000}
+                height={1000}
+                alt="layanan-1"
+                className="w-full"
+              />
+              {/* Overlay Transparan Hitam */}
+            </div>
+            <div
+              className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0  bg-no-repeat xl:h-screen"
+              // style={{
+              //   backgroundImage: `url(/assets/img/informasi/informasi-1.png)`,
+              // }}
+            >
+              <Image
+                src={"/assets/img/informasi/informasi-5.png"}
+                width={1000}
+                height={1000}
+                alt="layanan-1"
+                className="w-full"
+              />
+              {/* Overlay Transparan Hitam */}
+            </div>
+            <div
+              className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0  bg-no-repeat xl:h-screen"
+              // style={{
+              //   backgroundImage: `url(/assets/img/informasi/informasi-1.png)`,
+              // }}
+            >
+              <Image
+                src={"/assets/img/informasi/informasi-6.png"}
+                width={1000}
+                height={1000}
+                alt="layanan-1"
+                className="w-full"
+              />
+              {/* Overlay Transparan Hitam */}
+            </div>
+          </Carousel>
         </div>
       </div>
 
