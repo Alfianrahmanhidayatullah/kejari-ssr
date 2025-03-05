@@ -229,30 +229,68 @@ const Home = ({ berita }) => {
           </div>
         </div>
       </div>
+
+      <div className="min-h-auto bg-[#118B50] flex flex-wrap justify-center items-center gap-6 p-6">
+        {/* Card Container */}
+        <div className="bg-white rounded-lg shadow-lg p-6 w-full md:w-[45%]">
+          <h2 className="text-green-700 font-bold text-lg border-b pb-2">
+            Penerimaan SPDP
+          </h2>
+          <table className="w-full mt-4 text-sm text-left">
+            <thead>
+              <tr className="text-gray-700">
+                <th className="font-medium">No SPDP</th>
+                <th className="font-medium">Tanggal SPDP</th>
+                <th className="font-medium">Penyidik</th>
+                <th className="font-medium">Nama Tersangka</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+
+        <div className="bg-white rounded-lg shadow-lg p-6 w-full md:w-[45%]">
+          <h2 className="text-green-700 font-bold text-lg border-b pb-2">
+            Penerimaan Berkas
+          </h2>
+          <table className="w-full mt-4 text-sm text-left">
+            <thead>
+              <tr className="text-gray-700">
+                <th className="font-medium">No SPDP</th>
+                <th className="font-medium">Tanggal SPDP</th>
+                <th className="font-medium">Penyidik</th>
+                <th className="font-medium">Nama Tersangka</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+
       {/* Berita Terbaru */}
       <div className="py-16 bg-white">
-        <div className="px-4 xl:px-0 xl:container mx-auto flex flex-col items-center md:h-max text-black">
-          <h1 className="text-center font-poppins-bold text-4xl md:text-5xl mb-4">
-            Berita Terbaru
+        <div className="px-4 xl:px-0 xl:container mx-auto flex flex-col items-center md:h-max ">
+          <h1 className="text-center font-poppins-bold text-3xl md:text-[40px] mb-4 uppercase text-[#118B50] underline">
+            Berita Terkini
           </h1>
 
-          <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 sm:w-auto">
+          <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 sm:w-auto ">
             {berita.slice(0, visibleCount).map((item) => (
               <div
                 key={item.id}
                 className="rounded-xl bg-white shadow-xl border border-[#f5f5f5] sm:h-auto sm:max-h-[1200px] md:h-[70vh] flex flex-col w-[20vw]"
               >
                 <div
-                  className="h-full md:h-3/6 bg-cover bg-no-repeat"
+                  className="h-full md:h-[35vh] bg-cover bg-no-repeat bg-red-200"
                   style={{
                     backgroundImage: `url(https://kejari-surabaya.my.id/img/berita/${item.gambar})`,
                   }}
                 ></div>
                 <div className="px-4 py-3 h-auto">
-                  <h4 className="text-base font-bold">{item.judul}</h4>
+                  <h4 className="text-[14px] font-bold text-[#118B50]">
+                    {item.judul}
+                  </h4>
                   {/* Membatasi deskripsi hanya 40 kata */}
-                  <p className="text-sm mt-2 text-justify">
-                    {item.deskripsi.split(" ").slice(0, 40).join(" ")}...
+                  <p className="text-[12px] mt-2 text-justify text-black">
+                    {item.deskripsi.split(" ").slice(0, 25).join(" ")}...
                   </p>
                 </div>
               </div>
@@ -263,7 +301,7 @@ const Home = ({ berita }) => {
           {visibleCount < berita.length && (
             <div className="flex justify-center">
               <button
-                className={`rounded-lg bg-[#153164] text-white px-6 py-3 flex gap-2.5 justify-center items-center text-lg font-poppins-bold mt-10 hover:no-underline hover:bg-[#17438E] ${
+                className={`rounded-lg bg-[#118B50] text-white px-6 py-3 flex gap-2.5 justify-center items-center text-lg font-poppins-bold mt-10 hover:no-underline hover:bg-[#2b7853] ${
                   isLoading ? "opacity-50 cursor-not-allowed" : ""
                 }`}
                 onClick={handleLoadMore}
