@@ -1,87 +1,76 @@
 import React from "react";
 import { FiMail } from "react-icons/fi";
 import Image from "next/image";
-import { FaLocationDot, FaWhatsapp } from "react-icons/fa6";
+import {
+  FaFacebook,
+  FaGlobe,
+  FaInstagram,
+  FaLocationDot,
+  FaTwitter,
+  FaWhatsapp,
+  FaYoutube,
+} from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#17438E]">
+    <footer className="bg-[#118B50]">
       <div className="container mx-auto py-6 lg:pt-16 lg:pb-8 text-white">
-        <div className="mt-6 grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-5 w-full px-6 md:px-10">
+        <div className="mt-6 grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-3 w-full px-6 md:px-10">
           <div className="mr-2">
             <div className="flex flex-col gap-4">
-              <h2 className="font-poppins-regular text-sm md:text-lg mt-4 font-bold">
-                Profil
+              <h2 className="font-poppins-regular text-base md:text-xl mt-4 font-bold">
+                MEDIA SOSIAL
               </h2>
-              <ul className="text-sm">
-                <li>- Tentang Kami</li>
-                <li>- Struktur Organisasi</li>
-                <li>- Pejabat Struktural</li>
-                <li>- Tugas Pokok dan Fungsi</li>
-                <li>- Doktrin Kejaksaan</li>
-                <li>- Visi dan Misi</li>
-                <li>- Perintah Harian Jaksa Agung</li>
+              <ul className="text-base uppercase">
+                <li className="pt-2 flex items-center">
+                  <FaFacebook className="mr-2 text-xl" />
+                  Facebook
+                </li>
+                <li className="pt-2 flex items-center">
+                  <FaTwitter className="mr-2 text-xl" />
+                  Twitter
+                </li>
+                <li className="pt-2 flex items-center">
+                  <FaInstagram className="mr-2 text-xl" />
+                  Instagram
+                </li>
+                <li className="pt-2 flex items-center">
+                  <FaYoutube className="mr-2 text-xl" />
+                  Youtube
+                </li>
               </ul>
             </div>
           </div>
           <div className="mr-2">
             <div className="flex flex-col gap-4">
-              <h2 className="font-poppins-regular text-sm md:text-lg mt-4 font-bold">
-                Profil Pimpinan
+              <h2 className="font-poppins-regular text-base md:text-xl mt-4 font-bold">
+                LINK TERKAIT
               </h2>
-              <ul className="text-sm">
-                <li>- Kepala Kejaksaan Negeri</li>
-                <li>- Kepala Sub Bagian Pembinaan</li>
-                <li>- Kepala Seksi Intelijen</li>
-                <li>- Kepala Saksi Tindak Pidana Umum</li>
-                <li>- Kepala Saksi Tindak Pidana Khusus</li>
-                <li>- Kepala Seksis Perdata & Tata Usaha Negara</li>
-              </ul>
-            </div>
-          </div>
-          <div className="mr-2">
-            <div className="flex flex-col gap-4">
-              <h2 className="font-poppins-regular text-sm md:text-lg mt-4 font-bold">
-                Organisasi
-              </h2>
-              <ul className="text-sm">
-                <li>- Pembinaan</li>
-                <li>- Intelijen</li>
-                <li>- Tindak Pidana Umum</li>
-                <li>- Tindak Pidana Khusus</li>
-                <li>- Perdata & Tata Usaha Negara</li>
-              </ul>
-            </div>
-          </div>
-          <div className="mr-2">
-            <div className="flex flex-col gap-4">
-              <h2 className="font-poppins-regular text-sm md:text-lg mt-4 font-bold">
-                Produk Hukum
-              </h2>
-              <ul className="text-sm">
-                <li>- Undang-Undang</li>
-                <li>- Putusan Mahkamah Konstitusi</li>
-                <li>- Peraturan Pemerintah</li>
-                <li>- Peraturan Presiden</li>
-                <li>- Keputusan Presiden</li>
-                <li>- Intruksi Presiden</li>
-                <li>- Peraturan Jaksa Agung</li>
-                <li>- Nota Kesepahaman</li>
-                <li>- Produk Hukum Lainnya</li>
+              <ul className="text-base">
+                <li className="pt-2">- Kejaksaan Agung RI </li>
+                <li className="pt-2">- Kejaksaan Tinggi Jawa Timur</li>
               </ul>
             </div>
           </div>
 
           <div className="">
-            <h2 className="font-poppins-regular text-sm md:text-lg mt-4 font-bold">
-              Kontak
+            <h2 className="font-poppins-regular text-sm md:text-xl mt-4 font-bold">
+              KEJAKSAAN NEGERI SURABAYA
             </h2>
             <a
-              href="mailto:febri@arkanatechnology.com"
+              href="https://wa.me/62811333525"
               className="text-white"
               target="__blank"
             >
-              <div className="mt-2 flex font-poppins-medium text-sm">
+              <div className="mt-2 flex font-poppins-medium text-base items-center">
+                <div className="text-xl pr-2">
+                  <FaWhatsapp />
+                </div>
+                <div>+031 7382297</div>
+              </div>
+            </a>
+            <a href="" className="text-white" target="__blank">
+              <div className="mt-2 flex font-poppins-medium text-base ">
                 <div className="text-xl pr-2 pt-1">
                   <FaLocationDot />
                 </div>
@@ -98,7 +87,7 @@ const Footer = () => {
               className="text-white"
               target="__blank"
             >
-              <div className="mt-2 flex font-poppins-medium text-sm items-center">
+              <div className="mt-2 flex font-poppins-medium text-base items-center">
                 <div className="text-xl pr-2">
                   <FiMail />
                 </div>
@@ -107,16 +96,17 @@ const Footer = () => {
                 </div>
               </div>
             </a>
+
             <a
-              href="https://wa.me/62811333525"
+              href="https://kejari-surabaya.kejaksaan.go.id"
               className="text-white"
               target="__blank"
             >
-              <div className="mt-2 flex font-poppins-medium text-sm">
+              <div className="mt-2 flex font-poppins-medium text-base items-center">
                 <div className="text-xl pr-2">
-                  <FaWhatsapp />
+                  <FaGlobe />
                 </div>
-                <div>+031 7382297</div>
+                <div>https://kejari-surabaya.kejaksaan.go.id</div>
               </div>
             </a>
           </div>

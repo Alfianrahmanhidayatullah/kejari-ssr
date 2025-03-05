@@ -52,7 +52,7 @@ export function Navbar() {
         <button
           type="button"
           className={`ml-3 inline-flex items-center justify-center text-3xl hover:text-gray-900 md:hidden 
-            ${colorChange || showMobileNav ? "text-[#fb392f]" : "text-white"}
+            ${colorChange || showMobileNav ? "text-[#118B50]" : "text-white"}
           `}
           onClick={() => setShowMobileNav(!showMobileNav)}
         >
@@ -70,7 +70,7 @@ export function Navbar() {
             <li
               className={`hover:border-b-4 hover:duration-200 py-3 ${
                 colorChange || showMobileNav
-                  ? "hover:border-[#fb392f]"
+                  ? "hover:border-[#118B50]"
                   : "hover:border-white"
               }`}
             >
@@ -95,7 +95,7 @@ export function Navbar() {
               <div
                 className={`hover:border-b-4 hover:duration-200 py-3 ${
                   colorChange || showMobileNav
-                    ? "hover:border-[#fb392f]"
+                    ? "hover:border-[#118B50]"
                     : "hover:border-white"
                 }`}
               >
@@ -117,7 +117,7 @@ export function Navbar() {
                   <li className="hover:bg-gray-100">
                     <Link
                       href="/visi-misi"
-                      className="block px-4 py-2 hover:text-blue-600"
+                      className="block px-4 py-2 hover:text-[#118B50]"
                     >
                       Visi & Misi
                     </Link>
@@ -125,7 +125,7 @@ export function Navbar() {
                   <li className="hover:bg-gray-100">
                     <Link
                       href="/struktur-organisasi"
-                      className="block px-4 py-2 hover:text-blue-600"
+                      className="block px-4 py-2 hover:text-[#118B50]"
                     >
                       Struktur Organisasi
                     </Link>
@@ -137,7 +137,7 @@ export function Navbar() {
             <li
               className={`hover:border-b-4 hover:duration-200 py-3 ${
                 colorChange || showMobileNav
-                  ? "hover:border-[#fb392f]"
+                  ? "hover:border-[#118B50]"
                   : "hover:border-white"
               }`}
             >
@@ -155,7 +155,7 @@ export function Navbar() {
             <li
               className={`hover:border-b-4 hover:duration-200 py-3  ${
                 colorChange || showMobileNav
-                  ? "hover:border-[#fb392f]"
+                  ? "hover:border-[#118B50]"
                   : "hover:border-white"
               }`}
             >
@@ -173,7 +173,7 @@ export function Navbar() {
             <li
               className={`hover:border-b-4 hover:duration-200 py-3  ${
                 colorChange || showMobileNav
-                  ? "hover:border-[#fb392f]"
+                  ? "hover:border-[#118B50]"
                   : "hover:border-white"
               }`}
             >
@@ -191,7 +191,7 @@ export function Navbar() {
             <li
               className={`hover:border-b-4 hover:duration-200 py-3  ${
                 colorChange || showMobileNav
-                  ? "hover:border-[#fb392f]"
+                  ? "hover:border-[#118B50]"
                   : "hover:border-white"
               }`}
             >
@@ -209,7 +209,7 @@ export function Navbar() {
             <li
               className={`hover:border-b-4 hover:duration-200 py-3  ${
                 colorChange || showMobileNav
-                  ? "hover:border-[#fb392f]"
+                  ? "hover:border-[#118B50]"
                   : "hover:border-white"
               }`}
             >
