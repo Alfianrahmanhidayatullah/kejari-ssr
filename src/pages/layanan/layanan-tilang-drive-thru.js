@@ -11,8 +11,8 @@ export default function LayananTilangDriveThru() {
       <Header />
       <Navbar />
 
-      <div className="py-28 bg-gradient-to-t from-white to-[#5493ff]">
-        <div className="px-4 xl:px-0 xl:container mx-auto flex flex-col  md:h-max text-black">
+      <div className="py-28 bg-[#71bb98]">
+        <div className="px-4 xl:px-0 xl:container mx-auto flex flex-col  md:h-max text-white">
           <h1 className="text-center font-poppins-bold text-3xl md:text-4xl mb-4 uppercase">
             TILANG DRIVETHRU
           </h1>
