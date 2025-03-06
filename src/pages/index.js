@@ -425,61 +425,53 @@ const Home = ({ berita }) => {
 
       <div className="min-h-auto bg-white px-6 py-10">
         {/* Card Container */}
+        {/* Preconnect untuk YouTube */}
+        <link rel="preconnect" href="https://www.youtube.com" />
+        <link rel="preconnect" href="https://www.google.com" />
+        <link rel="preconnect" href="https://www.gstatic.com" />
         <div className="w-full text-center font-poppins-bold text-4xl md:text-[35px] mb-8 text-[#118B50] uppercase underline">
           <h1>INFORMASI PUBLIK</h1>
         </div>
         <div className="w-full flex flex-wrap h-auto p-2 ">
-          <div className="w-full md:w-9/12  px-6 ">
+          {/* Bagian Kiri */}
+          <div className="w-full md:w-9/12 px-6">
             <div className="w-full">
               <Image
-                src={
-                  "/assets/img/informasi-publik/informasi-publik-banner.webp"
-                }
+                src="/assets/img/informasi-publik/informasi-publik-banner.webp"
                 width={1200}
-                height={100}
-                alt="informasi-publik-banner"
+                height={300}
+                alt="Informasi Publik Banner"
+                priority
               />
             </div>
-            <div className=" w-full my-6">
-              {/* Video utama */}
-              <div className="w-full">
-                <iframe
-                  className="w-full h-56 md:h-96 rounded-lg"
-                  src="https://www.youtube.com/embed/UridEmhSPh0?si=48ul4Y_sfnFwKPx-"
-                  title="YouTube video player"
-                  allowFullScreen
-                ></iframe>
-              </div>
 
-              {/* Thumbnail video lainnya */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-                <div className="w-full">
-                  <iframe
-                    className="w-full h-32 md:h-48 rounded-lg"
-                    src="https://www.youtube.com/embed/1zmTEYiqDbs?si=6nCbAkU_mojILWv3"
-                    title="YouTube video player"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-                <div className="w-full">
-                  <iframe
-                    className="w-full h-32 md:h-48 rounded-lg"
-                    src="https://www.youtube.com/embed/MuFTGxKLG4g?si=b0Us1yjAMIYDaP_a"
-                    title="YouTube video player"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-                <div className="w-full">
-                  <iframe
-                    className="w-full h-32 md:h-48 rounded-lg"
-                    src="https://www.youtube.com/embed/7Xn6lXc05co?si=8Utfg2M5AtcvCFvb"
-                    title="YouTube video player"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </div>
+            {/* Video Utama */}
+            <div className="w-full my-6">
+              <iframe
+                className="w-full h-56 md:h-96 rounded-lg"
+                src="https://www.youtube-nocookie.com/embed/UridEmhSPh0?rel=0"
+                title="YouTube video player"
+                allowFullScreen
+              ></iframe>
             </div>
-            <div className="">
+
+            {/* Thumbnail Video Lainnya */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+              {["1zmTEYiqDbs", "MuFTGxKLG4g", "7Xn6lXc05co"].map(
+                (videoId, index) => (
+                  <div key={index} className="w-full">
+                    <iframe
+                      className="w-full h-32 md:h-48 rounded-lg"
+                      src={`https://www.youtube-nocookie.com/embed/${videoId}?rel=0`}
+                      title={`YouTube video ${index + 1}`}
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                )
+              )}
+            </div>
+
+            <div className="mt-6">
               <h1 className="uppercase text-[#118B50] text-left text-3xl">
                 GALERI VIDEO
               </h1>
