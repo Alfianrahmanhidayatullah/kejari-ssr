@@ -336,7 +336,7 @@ const Home = ({ berita }) => {
               // }}
             >
               <Image
-                src={"/assets/img/informasi/informasi-1.png"}
+                src={"/assets/img/informasi/informasi-1.webp"}
                 width={1000}
                 height={1000}
                 alt="layanan-1"
@@ -347,11 +347,11 @@ const Home = ({ berita }) => {
             <div
               className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0  bg-no-repeat xl:h-screen"
               // style={{
-              //   backgroundImage: `url(/assets/img/informasi/informasi-1.png)`,
+              //   backgroundImage: `url(/assets/img/informasi/informasi-1.webp)`,
               // }}
             >
               <Image
-                src={"/assets/img/informasi/informasi-2.png"}
+                src={"/assets/img/informasi/informasi-2.webp"}
                 width={1000}
                 height={1000}
                 alt="layanan-1"
@@ -362,11 +362,11 @@ const Home = ({ berita }) => {
             <div
               className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0  bg-no-repeat xl:h-screen"
               // style={{
-              //   backgroundImage: `url(/assets/img/informasi/informasi-1.png)`,
+              //   backgroundImage: `url(/assets/img/informasi/informasi-1.webp)`,
               // }}
             >
               <Image
-                src={"/assets/img/informasi/informasi-3.png"}
+                src={"/assets/img/informasi/informasi-3.webp"}
                 width={1000}
                 height={1000}
                 alt="layanan-1"
@@ -377,11 +377,11 @@ const Home = ({ berita }) => {
             <div
               className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0  bg-no-repeat xl:h-screen"
               // style={{
-              //   backgroundImage: `url(/assets/img/informasi/informasi-1.png)`,
+              //   backgroundImage: `url(/assets/img/informasi/informasi-1.webp)`,
               // }}
             >
               <Image
-                src={"/assets/img/informasi/informasi-4.png"}
+                src={"/assets/img/informasi/informasi-4.webp"}
                 width={1000}
                 height={1000}
                 alt="layanan-1"
@@ -392,11 +392,11 @@ const Home = ({ berita }) => {
             <div
               className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0  bg-no-repeat xl:h-screen"
               // style={{
-              //   backgroundImage: `url(/assets/img/informasi/informasi-1.png)`,
+              //   backgroundImage: `url(/assets/img/informasi/informasi-1.webp)`,
               // }}
             >
               <Image
-                src={"/assets/img/informasi/informasi-5.png"}
+                src={"/assets/img/informasi/informasi-5.webp"}
                 width={1000}
                 height={1000}
                 alt="layanan-1"
@@ -407,11 +407,11 @@ const Home = ({ berita }) => {
             <div
               className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0  bg-no-repeat xl:h-screen"
               // style={{
-              //   backgroundImage: `url(/assets/img/informasi/informasi-1.png)`,
+              //   backgroundImage: `url(/assets/img/informasi/informasi-1.webp)`,
               // }}
             >
               <Image
-                src={"/assets/img/informasi/informasi-6.png"}
+                src={"/assets/img/informasi/informasi-6.webp"}
                 width={1000}
                 height={1000}
                 alt="layanan-1"
@@ -432,7 +432,9 @@ const Home = ({ berita }) => {
           <div className="w-full md:w-9/12  px-6 ">
             <div className="w-full">
               <Image
-                src={"/assets/img/informasi-publik/informasi-publik-banner.png"}
+                src={
+                  "/assets/img/informasi-publik/informasi-publik-banner.webp"
+                }
                 width={1200}
                 height={100}
                 alt="informasi-publik-banner"
@@ -491,7 +493,7 @@ const Home = ({ berita }) => {
           <div className="w-full md:w-3/12 ">
             <div className="flex justify-center ">
               <Image
-                src={"/assets/img/informasi-publik/jam-kerja.png"}
+                src={"/assets/img/informasi-publik/jam-kerja.webp"}
                 width={1000}
                 height={100}
                 alt="jam-kerja"
@@ -505,7 +507,7 @@ const Home = ({ berita }) => {
                 <Carousel>
                   <div className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0  bg-no-repeat xl:h-screen">
                     <Image
-                      src={"/assets/img/informasi-publik/infografis-1.png"}
+                      src={"/assets/img/informasi-publik/infografis-1.webp"}
                       width={350}
                       height={1000}
                       alt="layanan-1"
@@ -514,7 +516,7 @@ const Home = ({ berita }) => {
                   </div>
                   <div className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0  bg-no-repeat xl:h-screen">
                     <Image
-                      src={"/assets/img/informasi-publik/infografis-2.png"}
+                      src={"/assets/img/informasi-publik/infografis-2.webp"}
                       width={320}
                       height={1000}
                       alt="layanan-1"
@@ -532,7 +534,7 @@ const Home = ({ berita }) => {
                 <Carousel>
                   <div className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0  bg-no-repeat xl:h-screen">
                     <Image
-                      src={"/assets/img/informasi-publik/survey-1.png"}
+                      src={"/assets/img/informasi-publik/survey-1.webp"}
                       width={350}
                       height={1000}
                       alt="layanan-1"
@@ -541,7 +543,7 @@ const Home = ({ berita }) => {
                   </div>
                   <div className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0  bg-no-repeat xl:h-screen">
                     <Image
-                      src={"/assets/img/informasi-publik/survey-2.png"}
+                      src={"/assets/img/informasi-publik/survey-2.webp"}
                       width={320}
                       height={1000}
                       alt="layanan-1"
