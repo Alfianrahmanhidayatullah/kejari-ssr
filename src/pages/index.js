@@ -1,25 +1,18 @@
 // pages/index.js
 import { useState } from "react";
-import { FaMoneyBillAlt, FaWhatsapp } from "react-icons/fa";
 import Button from "../components/Button/Button";
-import Link from "next/link";
 import Header from "../components/Layout/Header";
 import { Navbar } from "../components/Layout/Navbar";
 import Footer from "../components/Layout/Footer";
 import { Carousel } from "flowbite-react";
 import Image from "next/image";
+export async function getServerSideProps({ req, res }) {
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=30, stale-while-revalidate=59"
+  );
 
-export async function getServerSideProps() {
   try {
-    // Fetch data dari backend Laravel
-    // "https://kejari-surabaya.my.id/api/berita"
-
-    // const res = await fetch("http://localhost:8000/api/berita");
-    // const API_URL =
-    //   process.env.NEXT_PUBLIC_API_URL ||
-    //   "https://experimental-clarita-alfianrahman-05697585.koyeb.app/api/berita";
-    // const res = await fetch(API_URL);
-
     const res = await fetch("https://kejari-surabaya.my.id/api/berita");
 
     if (!res.ok) {
@@ -70,14 +63,29 @@ const Home = ({ berita }) => {
       {/* Hero Section */}
       <div className="bg-fixed bg-cover bg-no-repeat xl:h-screen">
         <Carousel>
-          {berita.slice(0, 4).map((item) => (
+          {berita.slice(0, 4).map((item, index) => (
             <div
               key={item.id}
-              className=" container mx-auto flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0 bg-fixed bg-cover bg-no-repeat xl:h-screen"
+              className="  flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0 bg-fixed bg-cover bg-no-repeat xl:h-screen"
               style={{
                 backgroundImage: `url(https://kejari-surabaya.my.id/img/berita/${item.gambar})`,
               }}
             >
+              {/* <div
+              key={item.id}
+              className="flex flex-col-reverse justify-center md:flex-row md:text-left h-screen md:items-center px-4 md:px-0 bg-fixed bg-cover bg-no-repeat xl:h-screen relative"
+              // className="px-10 flex flex-col-reverse justify-center bg-cover bg-no-repeat bg-fixed  h-screen  relative"
+            >
+              <Image
+                src={`https://kejari-surabaya.my.id/img/berita/${item.gambar}`}
+                fill
+                // sizes="100vw"
+                width={1000}
+                
+                priority={index === 0} // Priority for first slide only
+                className="object-contain"
+                alt={item.judul}
+              /> */}
               {/* Overlay Transparan Hitam */}
               <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
