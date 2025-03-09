@@ -7,21 +7,21 @@ const nextConfig = {
   // experimental: {
   //   optimizeCss: true,
   // },
-  webpack: (config, { dev, isServer }) => {
-    // Only enable bundle analyzer in server builds
-    if (!dev && isServer) {
-      const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
-      config.plugins.push(
-        new BundleAnalyzerPlugin({
-          analyzerMode: "server",
-          analyzerPort: 8889,
-          openAnalyzer: true,
-        })
-      );
-    }
+  // webpack: (config, { dev, isServer }) => {
+  //   // Only enable bundle analyzer in server builds
+  //   if (!dev && isServer) {
+  //     const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
+  //     config.plugins.push(
+  //       new BundleAnalyzerPlugin({
+  //         analyzerMode: "server",
+  //         analyzerPort: 12345,
+  //         openAnalyzer: true,
+  //       })
+  //     );
+  //   }
 
-    return config;
-  },
+  //   return config;
+  // },
   async headers() {
     return [
       {
